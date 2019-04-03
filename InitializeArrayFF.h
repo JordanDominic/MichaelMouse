@@ -32,7 +32,7 @@ void initializeFFMaze(int maze[33][33]) {
 	}
 
 	
-	//The following loops 
+	//The following loops mark where we know there are walls (I think...)
 	for (i = 0; i < 33; i = i + 2) {
 		for (j = 0; j < 33; j++) {
 			maze[i][j] = 111;
@@ -44,21 +44,28 @@ void initializeFFMaze(int maze[33][33]) {
 		}
 	}
 
+	//Right wall of maze
 	for (i = 32; i < 33; i++) {
 		for (j = 0; j < 33; j++) {
 			maze[i][j] = 111;
 		}
 	}
+	
+	//Left wall of maze
 	for (i = 0; i < 1; i++) {
 		for (j = 0; j < 33; j++) {
 			maze[i][j] = 111;
 		}
 	}
+	
+	//Bottom wall of maze
 	for (i = 0; i < 33; i++) {
 		for (j = 0; j < 1; j++) {
 			maze[i][j] = 111;
 		}
 	}
+	
+	//Top wall of maze
 	for (i = 0; i < 33; i++) {
 		for (j = 32; j < 33; j++) {
 			maze[i][j] = 111;
