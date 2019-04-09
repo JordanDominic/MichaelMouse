@@ -1,6 +1,6 @@
 ieee_micromouse
 ===============
-By: Adam Li, Eric, Matt, Sunny, Lucas
+Tooken by Amanda
 ### Languages: C, C++, Arduino
 ## Algorithms: PID, FloodFill
 
